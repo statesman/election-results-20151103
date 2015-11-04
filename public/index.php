@@ -1,60 +1,93 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <?php
+  $meta = array(
+    "title" => "Single page project | Statesman.com",
+    "description" => "Description for single-page-project.",
+    "thumbnail" => "http://projects.statesman.com/project_path/assets/share.png", // needs update
+    "shortcut_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_5126cb2068bd43d1ab4e17660ac48255.ico",
+    "apple_touch_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_fa2d2d6e73614535b997734c7e7d2287.png",
+    "url" => "http://projects.statesman.com/project_path/",
+    "twitter" => "statesman"
+  );
+?>
 
-  <title>Travis and Williamson county precinct-by-precinct 2014 election results | Statesman.com</title>
-  <link rel="icon" type="image/png" href="//projects.statesman.com/common/favicon.ico">
+  <title>Interactive: <?php print $meta['title']; ?> | Austin American-Statesman</title>
+  <link rel="shortcut icon" href="<?php print $meta['shortcut_icon']; ?>" />
+  <link rel="apple-touch-icon" href="<?php print $meta['apple_touch_icon']; ?>" />
 
-  <meta name="description" content="Precinct-by-precinct Travis and Williamson county election results for the 2014 general election.">
+  <link rel="canonical" href="<?php print $meta['url']; ?>" />
 
-  <meta property="og:title" content="Travis and Williamson county election results map"/>
-  <meta property="og:description" content="Precinct-by-precinct Travis and Williamson county election results for the 2014 general election."/>
-  <meta property="og:image" content="http://projects.statesman.com/databases/election-maps/assets/social-share.jpg"/>
-  <meta property="og:url" content="http://projects.statesman.com/databases/election-maps/"/>
+  <meta name="description" content="<?php print $meta['description']; ?>">
+
+  <meta property="og:title" content="<?php print $meta['title']; ?>"/>
+  <meta property="og:description" content="<?php print $meta['description']; ?>"/>
+  <meta property="og:image" content="<?php print $meta['thumbnail']; ?>"/>
+  <meta property="og:url" content="<?php print $meta['url']; ?>"/>
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@statesman" />
-  <meta name="twitter:title" content="Travis and Williamson county election results map" />
-  <meta name="twitter:description" content="Precinct-by-precinct Travis and Williamson county election results for the 2014 general election." />
-  <meta name="twitter:image" content="http://projects.statesman.com/databases/election-maps/assets/social-share.jpg" />
-  <meta name="twitter:url" content="http://projects.statesman.com/databases/election-maps/" />
+  <meta name="twitter:site" content="@<?php print $meta['twitter']; ?>" />
+  <meta name="twitter:title" content="<?php print $meta['title']; ?>" />
+  <meta name="twitter:description" content="<?php print $meta['description']; ?>" />
+  <meta name="twitter:image" content="<?php print $meta['thumbnail']; ?>" />
+  <meta name="twitter:url" content="<?php print $meta['url']; ?>" />
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/style.css">
 
-  <link href="dist/style.css" rel="stylesheet">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+ 
 
-  <!-- project additions -->
-  <?php include "includes/advertising.js";?>
-  <?php include "../../common/metrics-head.js";?>
+  <?php /* CMG advertising and analytics */ ?>
+  <?php include "includes/advertising.inc"; ?>
+  <?php include "includes/metrics-head.inc"; ?>
+
 </head>
-
 <body>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img width="546" height="52" src="assets/logo.png" />
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+        <a class="navbar-brand" href="http://www.statesman.com/" target="_blank">
+        <img class="visible-xs visible-sm" width="103" height="26" src="assets/logo-short-black.png" />
+        <img class="hidden-xs hidden-sm" width="273" height="26" src="assets/logo.png" />
         </a>
-      </div>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="visible-xs small-social"><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right social hidden-xs">
+          <li><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a></li>
+          <li><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<div id="back">
+
 
   <div class="container">
     <div class="row">
       <div class="col-xs-12 header">
-        <h4>2014 elections</h4>
+        <h4>2015 elections</h4>
         <h2 class="page-title">Travis and Williamson county precinct-by-precinct results</h2>
         <p><small>Interactive by Andrew Chavez and Christian McDonald, Austin American-Statesman</small></p>
-        <p>Use the dropdown to see the highest vote-getter in a race for each Travis and Williamson county precinct in the Nov. 4 general election and the Dec. 17 runoff election. Roll your cursor over each precinct on the map to see votes for all candidates in the selected race. Hover over a candidate's name in the map legend to see his or her support in each precinct. For full results, go to <a href="http://statesman.com/electionresults" target="_blank">statesman.com/electionresults</a></p>
+        <p>Use the dropdown to see the highest vote-getter in a race for each Travis and Williamson county precinct in the Nov. 4 general election and the Dec. 17 runoff election. Roll your cursor over each precinct on the map to see votes for all candidates in the selected race. Hover over a candidate's name in the map legend to see his or her support in each precinct.</p>
       </div>
 
       <div class="form-group clearfix">
@@ -137,17 +170,20 @@
     </div>
   </div>
 
-  <?php include "includes/advertising.php";?>
 
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCy25plOzFlJryxCSF7CkOWL86C8tZWsLI&libraries=places"></script>
-  <script type="text/javascript" src="dist/scripts.js"></script>
+    <!-- bottom matter -->
+    <?php include "includes/banner-ad.inc";?>
+    <?php include "includes/legal.inc";?>
+    <?php include "includes/project-metrics.inc"; ?>
+    <?php include "includes/metrics.inc"; ?>
 
-  <!-- metrics code -->
-  <?php include "includes/project-metrics.js"; ?>
-  <?php include "../../common/metrics.js"; ?>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBFqzY0Bf4VMn4Wtx-EEb9S-cVkvzm8RFE  &libraries=places"></script>
+    <script src="dist/scripts.js"></script>
 
-  <p class="center-block text-center legal" style="max-width: 500px;margin-bottom:10px;line-height:15px;"><small>© 2014 <a href="http://www.coxmediagroup.com" target="_blank">Cox Media Group</a>. By using this website,
-    you accept the terms of our <a href="http://www.mystatesman.com/visitor_agreement/" target="_blank">Visitor Agreement</a> and <a target="_blank" href="http://www.mystatesman.com/privacy_policy/">Privacy Policy</a>, and understand your options regarding <a target="_blank" href="http://www.mystatesman.com/privacy_policy/#ad-choices">Ad Choices</a><img border="0" src="http://media.cmgdigital.com/shared/img/photos/2012/02/29/d3/da/ad_choices_logo.png" alt="AdChoices" style="margin: 0 0 0 4px;">.</small></p>
+</div>
 
+  <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>
+    <script src="//localhost:35729/livereload.js"></script>
+  <?php endif; ?>
 </body>
 </html>
