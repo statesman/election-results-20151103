@@ -15,7 +15,7 @@ module.exports = function(grunt) {
           cleancss: true
         },
         files: {
-          "dist/style.css": "src/css/style.less"
+          "public/dist/style.css": "src/css/style.less"
         }
       }
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       },
       homepage: {
         files: {
-          'dist/scripts.js': [
+          'public/dist/scripts.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/geocomplete/jquery.geocomplete.js',
             'bower_components/gmaps/gmaps.js',

@@ -92,3 +92,9 @@ node_modules
 
 #built files in public
 public/dist
+
+# Grunt modules
+.grunt/
+.ftppass
+.slack
+
