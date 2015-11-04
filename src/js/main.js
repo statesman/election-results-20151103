@@ -24,7 +24,7 @@
   $(function() {
 
     var map = new ElectionMap('#map');
-    map.drawWinners("mayor-runoff");
+    map.drawWinners("tr-bond");
 
     $("#address").geocomplete({
       map: map.gmap.map,
