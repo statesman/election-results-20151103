@@ -84,8 +84,8 @@
       <div class="col-xs-12 header">
         <h4>2015 elections</h4>
         <h2 class="page-title">Travis county precinct-by-precinct results</h2>
-        <p><small>Interactive by Andrew Chavez and Christian McDonald, Austin American-Statesman</small></p>
-        <p>Use the dropdown to see the highest vote-getter in a race for each Travis and Williamson county precinct in the Nov. 4 general election and the Dec. 17 runoff election. Roll your cursor over each precinct on the map to see votes for all candidates in the selected race. Hover over a candidate's name in the map legend to see his or her support in each precinct.</p>
+        <p><small>Interactive by Christian McDonald and Andrew Chavez, Austin American-Statesman</small></p>
+        <p>Use the dropdown to see the highest vote-getter in a race in a Travis county precinct in the Nov. 3 general election. Roll your cursor over each precinct on the map to see votes for all candidates in the selected race. Hover over a candidate's name in the map legend to see his or her support in each precinct. Williamson county totals are not included.</p>
       </div>
 
       <div class="form-group clearfix">
@@ -93,48 +93,48 @@
           <label for="race" class="control-label">Choose a race:</label>
            <select class="form-control" id="race" name="race">
             <optgroup label="Travis County">
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="tr-bond">TRAVIS COUNTY BOND PROPOSITION, TRAVIS COUNTY BOND ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="tr-bond">TRAVIS COUNTY BOND PROPOSITION, TRAVIS COUNTY BOND ELECTION</option>
             </optgroup>
             <optgroup label="State amendments">
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-01">PROP. 1, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-02">PROP. 2, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-03">PROP. 3, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-04">PROP. 4, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-05">PROP. 5, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-06">PROP. 6, CONSTITUTIONAL AMENDMENT ELECTION</option>
-                <option data-zoom="-1" data-center="30.259806, -97.746705" value="ca-07">PROP. 7, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-01">PROP. 1, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-02">PROP. 2, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-03">PROP. 3, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-04">PROP. 4, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-05">PROP. 5, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-06">PROP. 6, CONSTITUTIONAL AMENDMENT ELECTION</option>
+                <option data-zoom="-1" data-center="30.329632, -97.758797" value="ca-07">PROP. 7, CONSTITUTIONAL AMENDMENT ELECTION</option>
             </optgroup>
             <optgroup label="Individual cities">
-                <option data-zoom="0" data-center="30.458022, -97.613120" value="pf-p3">COUNCIL MEMBER, PLACE 3, CITY OF PFLUGERVILLE</option>
-                <option data-zoom="0" data-center="30.458022, -97.613120" value="pf-p5">COUNCIL MEMBER, PLACE 5, CITY OF PFLUGERVILLE</option>
-                <option data-zoom="-1" data-center="30.458022, -97.613120" value="pf-p01">PROP. 1, CITY OF PFLUGERVILLE</option>
-                <option data-zoom="-1" data-center="30.458022, -97.613120" value="pf-p02">PROP. 2, CITY OF PFLUGERVILLE</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="wb-p01">PROPOSITION, VILLAGE OF WEBBERVILLE</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="wb-library">BOARD OF TRUSTEE, WESTBANK COMMUNITY LIBRARY DISTRICT</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="sv-council">CITY COUNCIL, CITY OF SUNSET VALLEY</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="sv-p01">PROPOSITION 1, CITY OF SUNSET VALLEY</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-mayor">MAYOR, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-cc01">COUNCIL MEMBER, PLACE 1, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-cc03">COUNCIL MEMBER, PLACE 3, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-cc05">COUNCIL MEMBER, PLACE 5, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p01">PROPOSITION 1, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p02">PROPOSITION 2, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p03">PROPOSITION 3, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p04">PROPOSITION 4, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p05">PROPOSITION 5, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p06">PROPOSITION 6, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p07">PROPOSITION 7, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p08">PROPOSITION 8, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="lv-p09">PROPOSITION 9, CITY OF LAGO VISTA</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="j-mayor">MAYOR, CITY OF JONESTOWN</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="j-ap1">ALDERMAN, PLACE 1, CITY OF JONESTOWN</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="j-ap2">ALDERMAN, PLACE 2, CITY OF JONESTOWN</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="cp-p01">PROP. 1, CITY OF CEDAR PARK</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="cp-p02">PROP. 2, CITY OF CEDAR PARK</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="cp-p03">PROP. 3, CITY OF CEDAR PARK</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="cp-p04">PROP. 4, CITY OF CEDAR PARK</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="pv-mayor">MAYOR, VILLAGE OF POINT VENTURE</option>
-                <option data-zoom="-1" data-center="30.470995016166533,-97.67961883544923" value="v-council">VILLAGE COUNCIL, VILLAGE OF VOLENTE</option>
+                <option data-zoom="+2" data-center="30.458022, -97.613120" value="pf-p3">COUNCIL MEMBER, PLACE 3, CITY OF PFLUGERVILLE</option>
+                <option data-zoom="+2" data-center="30.458022, -97.613120" value="pf-p5">COUNCIL MEMBER, PLACE 5, CITY OF PFLUGERVILLE</option>
+                <option data-zoom="+2" data-center="30.458022, -97.613120" value="pf-p01">PROP. 1, CITY OF PFLUGERVILLE</option>
+                <option data-zoom="+2" data-center="30.458022, -97.613120" value="pf-p02">PROP. 2, CITY OF PFLUGERVILLE</option>
+                <option data-zoom="+1" data-center="30.347887, -97.486435" value="wb-p01">PROPOSITION, VILLAGE OF WEBBERVILLE</option>
+                <option data-zoom="+2" data-center="30.274056, -97.811662" value="wb-library">BOARD OF TRUSTEE, WESTBANK COMMUNITY LIBRARY DISTRICT</option>
+                <option data-zoom="+2" data-center="30.226140, -97.815576" value="sv-council">CITY COUNCIL, CITY OF SUNSET VALLEY</option>
+                <option data-zoom="+2" data-center="30.226140, -97.815576" value="sv-p01">PROPOSITION 1, CITY OF SUNSET VALLEY</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-mayor">MAYOR, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-cc01">COUNCIL MEMBER, PLACE 1, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-cc03">COUNCIL MEMBER, PLACE 3, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-cc05">COUNCIL MEMBER, PLACE 5, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p01">PROPOSITION 1, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p02">PROPOSITION 2, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p03">PROPOSITION 3, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p04">PROPOSITION 4, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p05">PROPOSITION 5, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p06">PROPOSITION 6, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p07">PROPOSITION 7, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p08">PROPOSITION 8, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="lv-p09">PROPOSITION 9, CITY OF LAGO VISTA</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="j-mayor">MAYOR, CITY OF JONESTOWN</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="j-ap1">ALDERMAN, PLACE 1, CITY OF JONESTOWN</option>
+                <option data-zoom="+1" data-center="30.461191, -97.989763" value="j-ap2">ALDERMAN, PLACE 2, CITY OF JONESTOWN</option>
+                <option data-zoom="+2" data-center="30.503471, -97.902008" value="cp-p01">PROP. 1, CITY OF CEDAR PARK</option>
+                <option data-zoom="+2" data-center="30.503471, -97.902008" value="cp-p02">PROP. 2, CITY OF CEDAR PARK</option>
+                <option data-zoom="+2" data-center="30.503471, -97.902008" value="cp-p03">PROP. 3, CITY OF CEDAR PARK</option>
+                <option data-zoom="+2" data-center="30.503471, -97.902008" value="cp-p04">PROP. 4, CITY OF CEDAR PARK</option>
+                <option data-zoom="+2" data-center="30.437719, -97.975931" value="pv-mayor">MAYOR, VILLAGE OF POINT VENTURE</option>
+                <option data-zoom="+2" data-center="30.461401, -97.888092" value="v-council">VILLAGE COUNCIL, VILLAGE OF VOLENTE</option>
             </optgroup>
           </select>
         </div>
@@ -152,7 +152,7 @@
       <div class="col-xs-12 col-sm-4 col-sm-pull-8">
         <ul id="key" class="list-group"></ul>
         <div id="results"></div>
-        <p><small>Data source: Travis County Clerk, Elections Division; Williamson County Clerk, Elections Department</small></p>
+        <p><small>Data source: Travis County Clerk, Elections Division<!-- ; Williamson County Clerk, Elections Department--></small></p>
       </div>
     </div>
   </div>

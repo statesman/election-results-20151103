@@ -17,7 +17,8 @@ module.exports = function(grunt) {
     },
 
     // Transpile LESS
-    less: {
+
+/*     less: {
       options: {
         paths: ['bower_components/bootstrap/less']
       },
@@ -31,6 +32,24 @@ module.exports = function(grunt) {
         }
       }
     },
+*/
+    // Transpile LESS
+   less: {
+      options: {
+        sourceMap: true,
+        paths: ['bower_components/bootstrap/less']
+      },
+      prod: {
+        options: {
+          compress: true,
+          cleancss: false
+        },
+        files: {
+          "public/dist/style.css": "src/less/style.less"
+        }
+      }
+    },
+
 
     // Pre-render Handlebars templates
     handlebars: {
